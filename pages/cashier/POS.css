@@ -1,0 +1,248 @@
+.pos-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.pos-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.pos-header h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.pos-main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 20px;
+  flex: 1;
+  overflow: auto;
+}
+
+.selection-panel,
+.cart-panel {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.selection-panel h2,
+.cart-panel h2 {
+  margin-top: 0;
+  color: #333;
+  font-size: 18px;
+  border-bottom: 2px solid #667eea;
+  padding-bottom: 10px;
+}
+
+.fruit-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.fruit-btn {
+  padding: 12px;
+  background-color: #f0f0f0;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.fruit-btn:hover {
+  background-color: #e8e8e8;
+}
+
+.fruit-btn.active {
+  background-color: #667eea;
+  color: white;
+  border-color: #667eea;
+}
+
+.size-buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.size-btn {
+  padding: 12px;
+  background-color: #f0f0f0;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.size-btn:hover {
+  background-color: #e8e8e8;
+}
+
+.size-btn.active {
+  background-color: #667eea;
+  color: white;
+  border-color: #667eea;
+}
+
+.topping-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.topping-label input {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.add-to-cart-btn {
+  padding: 12px;
+  background-color: #10b981;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: auto;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #059669;
+}
+
+.empty-cart {
+  text-align: center;
+  color: #999;
+  padding: 40px 20px;
+}
+
+.cart-items {
+  flex: 1;
+  overflow-y: auto;
+  margin-bottom: 15px;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  background-color: #f9f9f9;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  border-left: 4px solid #667eea;
+}
+
+.item-details {
+  flex: 1;
+}
+
+.item-details p {
+  margin: 4px 0;
+  font-size: 14px;
+}
+
+.item-details p:first-child {
+  font-weight: 700;
+  color: #333;
+}
+
+.item-price {
+  font-weight: 700;
+  color: #667eea;
+  margin: 0 15px;
+  min-width: 70px;
+  text-align: right;
+}
+
+.remove-btn {
+  background-color: #ef4444;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.remove-btn:hover {
+  background-color: #dc2626;
+}
+
+.cart-total {
+  background-color: #f0f4ff;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: right;
+  margin-bottom: 15px;
+}
+
+.cart-total h3 {
+  margin: 0;
+  color: #667eea;
+  font-size: 24px;
+}
+
+.submit-order-btn {
+  padding: 14px;
+  background-color: #667eea;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-order-btn:hover {
+  background-color: #5568d3;
+}
+
+.success-message {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #10b981;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 8px;
+  font-weight: 700;
+  animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(400px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
