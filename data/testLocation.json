@@ -1,0 +1,21 @@
+{
+  "locations": [
+    {
+      "id": "test-loc-001",
+      "name": "Test Location",
+      "address": "123 Demo Street, Test City",
+      "isTestLocation": true,
+      "createdAt": "2026-05-14T23:00:00Z",
+      "pricing": {
+        "mini": 1.00,
+        "regular": 2.75
+      },
+      "availableFruits": [],
+      "customFruits": [],
+      "hasChocolateChips": false,
+      "customToppings": [],
+      "setupCompleted": false,
+      "setupCompletedAt": null
+    }
+  ]
+}
